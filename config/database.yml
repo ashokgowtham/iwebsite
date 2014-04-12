@@ -52,11 +52,3 @@ test:
   password: <%= HEROKU_IWEBSITE_DEV_DB_PASSWORD %>
   host: <%= HEROKU_IWEBSITE_DEV_DB_HOST %>
   port: <%= HEROKU_IWEBSITE_DEV_DB_PORT %>
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: iwebsite_production
-  pool: 5
-  username: iwebsite
-  password:
