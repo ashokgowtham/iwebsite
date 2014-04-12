@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'  # to maintain parity between 'development' and 'production'
+ruby '2.0.0'
+# to maintain parity between 'development' and 'production'
  
-gem 'pg'  #this may already exist in the Gemfile
 gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -36,6 +36,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'unicorn', group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
