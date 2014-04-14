@@ -17,19 +17,19 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: <%= HEROKU_IWEBSITE_DEV_DB_NAME %>
+  database: <%= ENV['HEROKU_IWEBSITE_DEV_DB_NAME'] %>
   pool: 5
-  username: <%= HEROKU_IWEBSITE_DEV_DB_USERNAME %>
-  password: <%= HEROKU_IWEBSITE_DEV_DB_PASSWORD %>
+  username: <%= ENV['HEROKU_IWEBSITE_DEV_DB_USERNAME'] %>
+  password: <%= ENV['HEROKU_IWEBSITE_DEV_DB_PASSWORD'] %>
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: <%= HEROKU_IWEBSITE_DEV_DB_HOST %>
+  host: <%= ENV['HEROKU_IWEBSITE_DEV_DB_HOST'] %>
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  port: <%= HEROKU_IWEBSITE_DEV_DB_PORT %>
+  port: <%= ENV['HEROKU_IWEBSITE_DEV_DB_PORT'] %>
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -46,9 +46,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: <%= HEROKU_IWEBSITE_DEV_DB_NAME %>
+  database: <%= ENV['HEROKU_IWEBSITE_DEV_DB_NAME'] %>
   pool: 5
-  username: <%= HEROKU_IWEBSITE_DEV_DB_USERNAME %>
-  password: <%= HEROKU_IWEBSITE_DEV_DB_PASSWORD %>
-  host: <%= HEROKU_IWEBSITE_DEV_DB_HOST %>
-  port: <%= HEROKU_IWEBSITE_DEV_DB_PORT %>
+  username: <%= ENV['HEROKU_IWEBSITE_DEV_DB_USERNAME'] %>
+  password: <%= ENV['HEROKU_IWEBSITE_DEV_DB_PASSWORD'] %>
+  host: <%= ENV['HEROKU_IWEBSITE_DEV_DB_HOST'] %>
+  port: <%= ENV['HEROKU_IWEBSITE_DEV_DB_PORT'] %>
