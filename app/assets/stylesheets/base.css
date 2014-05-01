@@ -1,0 +1,11 @@
+/* basic reset */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* styles */
+body {
+	background: #fff;
+}
